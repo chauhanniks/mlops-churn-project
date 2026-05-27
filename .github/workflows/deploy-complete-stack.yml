@@ -26,7 +26,7 @@ env:
   AWS_REGION: ap-south-1
   ECR_REPOSITORY_API: churn-prediction-api
   ECR_REPOSITORY_UI: churn-prediction-ui
-  EKS_CLUSTER_NAME: churn-mlops
+  EKS_CLUSTER_NAME: churnmodel
   K8S_NAMESPACE: default
   # IMAGE_TAG: churnmodel
 
