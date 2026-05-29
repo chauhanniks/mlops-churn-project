@@ -21,7 +21,7 @@ logger = logging.getLogger(__name__)
 region = boto3.Session().region_name
 session = PipelineSession()
 role = "arn:aws:iam::911167906047:role/SageMakerChurnRole"
-bucket = "mlops-churn-model-artifacts"
+bucket = "mlops-churn-model-artifacts-niranjan-mlops"
 
 # Verify S3 bucket exists
 s3 = boto3.client('s3')

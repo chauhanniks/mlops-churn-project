@@ -65,7 +65,7 @@ This document verifies that all configurations are correct and the deployment wi
 ### FastAPI Environment
 - **AWS_DEFAULT_REGION**: ap-south-1
 - **MODEL_REGISTRY_GROUP**: ChurnModelPackageGroup
-- **S3_BUCKET**: mlops-churn-model-artifacts
+- **S3_BUCKET**: mlops-churn-model-artifacts-niranjan-mlops
 - **PYTHONPATH**: /app
 
 ### Required Secrets

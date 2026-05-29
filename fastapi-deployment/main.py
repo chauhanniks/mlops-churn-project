@@ -264,7 +264,7 @@ def download_model_from_s3_fallback(max_retries=3):
         try:
             _, s3_client = get_aws_clients()
             
-            bucket = os.getenv('S3_BUCKET', 'mlops-churn-model-artifacts')
+            bucket = os.getenv('S3_BUCKET', 'mlops-churn-model-artifacts-niranjan-mlops')
             
             # List objects to find latest model
             response = s3_client.list_objects_v2(
@@ -574,7 +574,7 @@ async def get_model_info():
         error_count=model_state.error_count,
         last_error=model_state.last_error,
         registry_group=os.getenv('MODEL_REGISTRY_GROUP', 'ChurnModelPackageGroup'),
-        s3_bucket=os.getenv('S3_BUCKET', 'mlops-churn-model-artifacts')
+        s3_bucket=os.getenv('S3_BUCKET', 'mlops-churn-model-artifacts-niranjan-mlops')
     )
 
 @app.get("/")

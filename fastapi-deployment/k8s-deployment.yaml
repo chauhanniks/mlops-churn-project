@@ -47,8 +47,10 @@ spec:
           value: "/app"
         - name: MODEL_REGISTRY_GROUP
           value: "ChurnModelPackageGroup"
+        # IMPORTANT: replace this with your actual model artifacts bucket.
+        # The README uses a unique suffix like mlops-churn-model-artifacts-<UNIQUE_ID>.
         - name: S3_BUCKET
-          value: "mlops-churn-model-artifacts"
+          value: "mlops-churn-model-artifacts-niranjan-mlops"
         resources:
           requests:
             memory: "1Gi"
