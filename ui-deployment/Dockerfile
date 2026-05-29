@@ -1,5 +1,8 @@
 FROM nginx:alpine
 
+# Install curl for Docker healthcheck
+RUN apk add --no-cache curl
+
 # Remove default nginx website
 RUN rm -rf /usr/share/nginx/html/*
 
