@@ -34,7 +34,7 @@ except Exception as e:
 # Pipeline parameter with validation
 input_data = ParameterString(
     name="InputDataUrl",
-    default_value="s3://mlops-churn-processed-data/preprocessed.csv"
+    default_value="s3://mlops-churn-processed-data-niranjan-mlops/preprocessed.csv"
 )
 
 # Preprocessing Step with explicit container version
